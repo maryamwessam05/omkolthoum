@@ -132,14 +132,21 @@ main{
 
 .section2{
     padding-top: 200px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
 }
 .house{
     width: 28vw;
+     opacity: 0;
+  transform: scale(0);
 }
 
 .girl{
     width: 26vw;
     margin-left: -200px;
+     opacity: 0;
+  transform: scale(0);
 
 }
 
@@ -148,3 +155,165 @@ main{
     position: relative;
     width: fit-content;
 }
+
+.half2{
+    position: relative;
+    width: 59%;
+}
+
+.player{
+    position: absolute;
+    width: 25vw;
+    right: 200px;
+    transform: rotate(17deg);
+    z-index: 15;
+  transform: scale(0);
+    
+    opacity: 0;
+}
+
+.note{
+    position: absolute;
+    right: 0;
+    width: 33vw;
+    opacity: 0;
+  transform: scale(0);
+}
+
+.music{
+    position: absolute;
+    left: 125px;
+}
+
+.music7{
+    position: absolute;
+            top: 64px;
+    left: 129px;
+  animation: floatMusic 2.5s ease-in-out infinite;
+animation-delay: 1.8s; 
+}
+
+.music6{
+       position: absolute;
+    top: -58px;
+    right: -147px;
+      animation: floatMusic 2.5s ease-in-out infinite;
+ animation-delay: 1.5s; 
+}
+
+.music5{
+    position: absolute;
+    top: 24px;
+    left: 15px;
+      animation: floatMusic 2.5s ease-in-out infinite;
+animation-delay: 1.2s; 
+}
+
+.music4{
+    position: absolute;
+top: 6px;
+    left: 165px;
+      animation: floatMusic 2.5s ease-in-out infinite;
+animation-delay: 0.9s; 
+}
+
+.music3{
+    position: absolute;
+
+    top: 77px;
+    right: -128px;
+    animation-delay: 0.6s;
+      animation: floatMusic 2.5s ease-in-out infinite;
+
+}
+
+.music2{
+    position: absolute;
+  top: 17px;
+    left: 110px;
+     animation-delay: 0.3s; 
+      animation: floatMusic 2.5s ease-in-out infinite;
+
+}
+
+.music1{
+    position: absolute;
+           top: -41px;
+    left: 45px;
+      animation: floatMusic 2.5s ease-in-out infinite;
+
+}
+
+@keyframes floatMusic {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-60px) scale(1.1);
+  }
+}
+
+@keyframes revealCharacter {
+  from{
+    opacity: 0;
+    transform: scale(0);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
+
+@keyframes height {
+  from{
+    height: 0;
+  }
+  to{
+    height: 836px;
+  }
+}
+
+
+.section2-active .house{
+  animation: revealCharacter 1s ease forwards;
+}
+
+.section2-active .girl{
+  animation: revealCharacter 1s ease 0.4s forwards;
+}
+
+.section2-active .player{
+  animation: revealCharacter 1s ease forwards;
+}
+
+.section2-active .note{
+  animation: revealCharacter 1s ease 0.4s forwards;
+}
+
+.section2-active .line{
+  animation: height 1s ease 0.7s forwards;
+
+}
+
+
+
+
+.line {
+     top: 46%;
+    position: absolute;
+    left: 35%;
+  stroke: #604635C9;
+  height: 0;
+  }
+
+
+
