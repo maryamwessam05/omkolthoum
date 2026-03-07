@@ -543,4 +543,38 @@ animation-delay: 0.9s;
     opacity: 1;
     transform: translateX(0);
   }
+
+}
+
+.section8{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.section8-active .omk4{
+  animation: revealCharacter 1s ease forwards;
+
+}
+
+.omk4cont{
+  position: relative;
+}
+
+.glass{
+
+}
+
+.ear{
+
+}
+
+.jewl{
+
+}
+
+.scarf{
+  
 }

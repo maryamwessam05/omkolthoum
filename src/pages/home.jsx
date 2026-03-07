@@ -38,12 +38,19 @@ import flower4 from "../assets/flower4.png"
 import piano from "../assets/piano.png"
 import badge from "../assets/badge.png"
 import enta from "../assets/enta.png"
+import omkolthoum3 from "../assets/omkolthom3.png"
+import Section7 from '../components/section7';
+import glass from "../assets/glass.png"
+import jewl from "../assets/jewl.png"
+import scarf from "../assets/scarf.png"
+import ear from "../assets/earing.png"
 
 const Home = () => {
 const [section2Entered, setSection2Entered] = useState(false);
 const [section3Entered, setSection3Entered] = useState(false);
 const [section4Entered, setSection4Entered] = useState(false);
 const [section6Entered, setSection6Entered] = useState(false);
+const [section8Entered, setSection8Entered] = useState(false);
 const [startTyping, setStartTyping] = useState(false);
     return (
         <>
@@ -151,6 +158,8 @@ const [startTyping, setStartTyping] = useState(false);
             </div>
 
             <Section5 />
+            
+            <Section7 />
 
             <div className={`section6 ${section6Entered ? "section6-active" : ""}`}
      onMouseEnter={() => setSection6Entered(true)}>
@@ -162,8 +171,19 @@ const [startTyping, setStartTyping] = useState(false);
 
             </div>
 
+             <div className={`section8 ${section8Entered ? "section8-active" : ""}`}
+     onMouseEnter={() => setSection8Entered(true)}>
+                <div className="omk4cont">
+                 <img className='omk4' src={omkolthoum3} alt="" />
+                 <img src={glass} alt="" className='glass'/>
+                 <img src={ear} alt="" className='ear'/>
+                 <img src={scarf} alt="" className='scarf'/>
+                 <img src={jewl} alt="" className='jewl'/>
+                
+                </div>
+            </div>
 
-            
+
 
 
         </main>

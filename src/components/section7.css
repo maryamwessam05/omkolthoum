@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.section7{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../assets/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  gap: 20px;
+  margin: 150px 0;
+  color: #FFF;
+text-align: center;
+  font-family: "Special Elite", system-ui;
+font-size: 72.628px;
+font-style: normal;
+font-weight: 350;
+line-height: normal;
+letter-spacing: -2.905px;
+position: relative;
+}
+
+.paper1{
+    position: absolute;
+    top: -16px;
+    width: 100%;
+    z-index: 16;
+}
+
+.paper2{
+    position: absolute;
+    bottom: -16px;
+    width: 100%;
+    z-index: 16;
+}
+
+
+.birds{
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+}
+
+.building{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.magazine{
+    position: relative;
+}
+
+.mag2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* hidden by default */
+  transition: opacity 0.5s ease;
+}
+
+.mag3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* hidden by default */
+  transition: opacity 0.5s ease;
+}
+.mag4{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* hidden by default */
+  transition: opacity 0.5s ease;
+}
+.mag5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* hidden by default */
+  transition: opacity 0.5s ease;
+}
+
+.mag6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* hidden by default */
+  transition: opacity 0.5s ease;
+}
+.mag7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* hidden by default */
+  transition: opacity 0.5s ease;
+}
+.mag8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* hidden by default */
+  transition: opacity 0.5s ease;
+}
+
+.section7.section7-active .mag1 { opacity: 1; transition-delay: 0.1s; }
+.section7.section7-active .mag2 { opacity: 1; transition-delay: 0.3s; }
+.section7.section7-active .mag3 { opacity: 1; transition-delay: 0.5s; }
+.section7.section7-active .mag4 { opacity: 1; transition-delay: 0.7s; }
+.section7.section7-active .mag5 { opacity: 1; transition-delay: 0.9s; }
+.section7.section7-active .mag6 { opacity: 1; transition-delay: 1.1s; }
+.section7.section7-active .mag7 { opacity: 1; transition-delay: 1.3s; }
+.section7.section7-active .mag8 { opacity: 1; transition-delay: 1.5s; }
