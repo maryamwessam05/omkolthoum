@@ -44,6 +44,10 @@ import glass from "../assets/glass.png"
 import jewl from "../assets/jewl.png"
 import scarf from "../assets/scarf.png"
 import ear from "../assets/earing.png"
+import SmallCap from '../components/smallcap';
+import carpet from "../assets/carpet1.png"
+import carpet2 from "../assets/carpet2.png"
+
 
 const Home = () => {
 const [section2Entered, setSection2Entered] = useState(false);
@@ -162,6 +166,7 @@ const [startTyping, setStartTyping] = useState(false);
             <Section7 />
 
             <div className={`section6 ${section6Entered ? "section6-active" : ""}`}
+
      onMouseEnter={() => setSection6Entered(true)}>
                 <img className='booth' src={booth} alt="" />
                 <img src={flower4} className='flower4' alt="" />
@@ -173,6 +178,7 @@ const [startTyping, setStartTyping] = useState(false);
 
              <div className={`section8 ${section8Entered ? "section8-active" : ""}`}
      onMouseEnter={() => setSection8Entered(true)}>
+                <img src={carpet2} alt="" />
                 <div className="omk4cont">
                  <img className='omk4' src={omkolthoum3} alt="" />
                  <img src={glass} alt="" className='glass'/>
@@ -181,6 +187,15 @@ const [startTyping, setStartTyping] = useState(false);
                  <img src={jewl} alt="" className='jewl'/>
                 
                 </div>
+                <img src={carpet} alt="" />
+                 
+                <SmallCap style="smallcap1" text="Her Stunning Jewlery" />
+                <SmallCap style="smallcap2" text="Her Iconic Hand Scarf" />
+                <SmallCap style="smallcap3" text="Her Iconic Sunglasses" />
+                <SmallCap style="smallcap4" text="Her Unforgettable Dress" />
+
+
+
             </div>
 
 

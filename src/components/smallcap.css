@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.smallcap1{
+    background-image: url("../assets//smallcap.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 200px;
+    left: 287px;
+    opacity: 0;
+}
+.captxt{
+    color: #6E503D;
+text-align: center;
+  font-family: "Special Elite", system-ui;font-size: 30.152px;
+font-style: normal;
+font-weight: 350;
+line-height: normal;
+letter-spacing: -1.206px;
+}
+
+.smallcap2{
+    background-image: url("../assets//smallcap.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 311px;
+    height: 139px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 511px;
+    left: 287px;
+    opacity: 0;
+}
+
+
+.smallcap3{
+    background-image: url("../assets//smallcap.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 269px;
+    height: 139px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 200px;
+    right: 287px;
+    opacity: 0;
+}
+
+.smallcap4{
+    background-image: url("../assets//smallcap.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+       width: 326px;
+    height: 139px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 500px;
+    right: 222px;
+    opacity: 0;
+
+}
+
+
+
+  @keyframes slideinobj3 {
+  0% {
+    opacity: 0;
+    transform: translateX(-800px) ;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(-15deg);
+  }}
+
+
+  .section8-active .smallcap1{
+    animation: slideinobj3 1s ease 3s forwards ;
+
+}
+
+.section8-active .smallcap2{
+    animation: slideinobj3 1s ease 3.5s  forwards;
+
+}
+
+@keyframes slideinobj4 {
+  0% {
+    opacity: 0;
+    transform: translateX(800px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(19deg);
+  }}
+
+  
+  .section8-active .smallcap3{
+    animation: slideinobj4 1s ease 4s  forwards;
+
+}
+
+  .section8-active .smallcap4{
+    animation: slideinobj4 1s ease 4.5s  forwards;
+
+}

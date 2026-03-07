@@ -37,7 +37,7 @@ main{
     width: 90vw;
     margin-top: -55px;
     overflow: hidden;
-  animation: scaleLyric 2s ease ;
+  animation: scaleLyric 2s ease forwards ;
 }
 
 .lyric img{
@@ -56,7 +56,7 @@ main{
     position: relative;
     z-index: 2;
         width: 28vw;
-  animation: scaleLyric 2s ease 2s backwards;
+  animation: scaleLyric 2s ease 2s forwards;
 
     top: 42px;
 }
@@ -66,7 +66,7 @@ main{
     width: 24vw;
     top: 74%;
     z-index: 9;
-  animation: scaleLyric 2s ease 1s backwards;
+  animation: scaleLyric 2s ease 1s forwards;
   
 
     position: absolute;
@@ -497,7 +497,7 @@ animation-delay: 0.9s;
 }
 
 .section6-active .flower4{
-    animation: slidein 1s ease ;
+    animation: slidein 1s ease forwards;
 }
 
 .piano{
@@ -508,7 +508,7 @@ animation-delay: 0.9s;
 }
 
 .section6-active .piano{
-    animation: slidein 1s ease 500ms ;
+    animation: slidein 1s ease 500ms forwards ;
 }
 
 .badge{
@@ -526,11 +526,11 @@ animation-delay: 0.9s;
 }
 
 .section6-active .badge{
-    animation: slidein2 1s ease 700ms ;
+    animation: slidein2 1s ease 700ms forwards ;
 }
 
 .section6-active .enta{
-    animation: slidein2 1s ease 900ms ;
+    animation: slidein2 1s ease 900ms forwards ;
 }
 
 
@@ -550,10 +550,14 @@ animation-delay: 0.9s;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 100px;
+  position: relative;
 }
 
+.omk4{
+  opacity: 0;
+}
 .section8-active .omk4{
   animation: revealCharacter 1s ease forwards;
 
@@ -563,18 +567,80 @@ animation-delay: 0.9s;
   position: relative;
 }
 
+.section8-active .glass{
+    animation: slideinobj 1s ease 1s forwards;
+
+}
 .glass{
+position: absolute;
+    top: 106px;
+    left: 255px;
+  opacity: 0;
+
+
+}
+
+.section8-active .ear{
+    animation: slideinobj2 1s ease 2.5s forwards ;
 
 }
 
 .ear{
+position: absolute;
+top: 173px;
+    left: 242px;
+  opacity: 0;
+
 
 }
 
+
+.section8-active .jewl{
+    animation: slideinobj2 1s ease 2s forwards;
+
+
+}
 .jewl{
+position: absolute;
+top: 226px;
+    left: 222px;
+  opacity: 0;
+
 
 }
+
+.section8-active .scarf{
+    animation: slideinobj 1s ease 1.5s  forwards;
+
+
+}
+
 
 .scarf{
-  
+position: absolute;
+    top: 338px;
+    left: 270px;
+  opacity: 0;
+
+
 }
+
+@keyframes slideinobj {
+  0% {
+    opacity: 0;
+    transform: translateX(800px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }}
+
+  @keyframes slideinobj2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-800px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }}
