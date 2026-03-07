@@ -47,6 +47,7 @@ import ear from "../assets/earing.png"
 import SmallCap from '../components/smallcap';
 import carpet from "../assets/carpet1.png"
 import carpet2 from "../assets/carpet2.png"
+import quote from "../assets/quote.png"
 
 
 const Home = () => {
@@ -56,6 +57,9 @@ const [section4Entered, setSection4Entered] = useState(false);
 const [section6Entered, setSection6Entered] = useState(false);
 const [section8Entered, setSection8Entered] = useState(false);
 const [startTyping, setStartTyping] = useState(false);
+const [startTyping9, setStartTyping9] = useState(false);
+
+
     return (
         <>
         <main>
@@ -165,9 +169,7 @@ const [startTyping, setStartTyping] = useState(false);
             
             <Section7 />
 
-            <div className={`section6 ${section6Entered ? "section6-active" : ""}`}
-
-     onMouseEnter={() => setSection6Entered(true)}>
+            <div className={`section6 ${section6Entered ? "section6-active" : ""}`} onMouseEnter={() => setSection6Entered(true)}>
                 <img className='booth' src={booth} alt="" />
                 <img src={flower4} className='flower4' alt="" />
                 <img src={piano} className='piano' alt="" />
@@ -196,6 +198,33 @@ const [startTyping, setStartTyping] = useState(false);
 
 
 
+            </div>
+
+            <div className={`section9`} onMouseEnter={() => {
+            setStartTyping(true);}}
+            >
+                <div className="quotecont">
+                    <div className="quote">
+                        {startTyping && (
+
+                   <TextType 
+                                text="المُحب لو معندوش عزة نفس ميتحبش"
+                                typingSpeed={75}
+                                pauseDuration={1500}
+                                loop={false}
+                                showCursor
+                                cursorCharacter="_"
+                                texts={["Welcome to React Bits! Good to see you!","Build some amazing experiences!"]}
+                                deletingSpeed={50}
+                                variableSpeedEnabled={false}
+                                variableSpeedMin={60}
+                                variableSpeedMax={120}
+                                cursorBlinkDuration={0.5}
+                        />
+                 )}
+
+                    </div>
+                </div>
             </div>
 
 

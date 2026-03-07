@@ -644,3 +644,38 @@ position: absolute;
     opacity: 1;
     transform: translateX(0);
   }}
+
+
+  .section9{
+    width: 100%;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+
+  }
+
+  .quotecont{
+    width: 90%;
+    height: fit-content;
+    background-image: url("../assets/quote.png");
+     background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+display:flex ;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .quote{
+       color: #6E503D;
+text-align: center;
+font-family: "Aref Ruqaa";
+font-size: 90px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -2.391px;
+width: 500px;
+  }
