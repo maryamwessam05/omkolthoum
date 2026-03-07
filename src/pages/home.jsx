@@ -29,16 +29,21 @@ import flower2 from "../assets/flower2.png"
 import radio from "../assets/radio.png"
 import newspaper from "../assets/news2.png"
 import ticket from "../assets/ticket.png"
+import booth from "../assets/photobooth.png"
 import omkolthoum from "../assets/omkolthom2.png"
-
-import { useState , useRef} from "react";
+import { useState} from "react";
 import Caption from '../components/caption';
 import Section5 from '../components/section5';
+import flower4 from "../assets/flower4.png"
+import piano from "../assets/piano.png"
+import badge from "../assets/badge.png"
+import enta from "../assets/enta.png"
 
 const Home = () => {
 const [section2Entered, setSection2Entered] = useState(false);
 const [section3Entered, setSection3Entered] = useState(false);
 const [section4Entered, setSection4Entered] = useState(false);
+const [section6Entered, setSection6Entered] = useState(false);
 const [startTyping, setStartTyping] = useState(false);
     return (
         <>
@@ -146,6 +151,21 @@ const [startTyping, setStartTyping] = useState(false);
             </div>
 
             <Section5 />
+
+            <div className={`section6 ${section6Entered ? "section6-active" : ""}`}
+     onMouseEnter={() => setSection6Entered(true)}>
+                <img className='booth' src={booth} alt="" />
+                <img src={flower4} className='flower4' alt="" />
+                <img src={piano} className='piano' alt="" />
+                <img src={badge} className='badge' alt="" />
+                <img src={enta} className='enta' alt="" />
+
+            </div>
+
+
+            
+
+
         </main>
         
         

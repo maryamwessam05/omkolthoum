@@ -456,3 +456,91 @@ animation-delay: 0.9s;
 }
 
 
+.section6{
+  padding-top: 100px;
+  position: relative;
+}
+.booth{
+  width: 210vw;
+    animation: slideLoop 20s linear infinite; 
+
+}
+
+@keyframes slideLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1170px);
+  }
+}
+
+.flower4{
+     position: absolute;
+    width: 10vw;
+    top: 106px;
+    z-index: 9;
+  
+
+}
+
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.section6-active .flower4{
+    animation: slidein 1s ease ;
+}
+
+.piano{
+      position: absolute;
+    left: 50px;
+    top: 153px;
+    width: 20vw;
+}
+
+.section6-active .piano{
+    animation: slidein 1s ease 500ms ;
+}
+
+.badge{
+  position: absolute;
+  right: 0;
+  bottom: -35px;
+    width: 7vw;
+}
+
+.enta{
+     right: 53px;
+    top: 39px;
+    position: absolute;
+    width: 18vw;
+}
+
+.section6-active .badge{
+    animation: slidein2 1s ease 700ms ;
+}
+
+.section6-active .enta{
+    animation: slidein2 1s ease 900ms ;
+}
+
+
+@keyframes slidein2 {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
