@@ -47,8 +47,8 @@ import ear from "../assets/earing.png"
 import SmallCap from '../components/smallcap';
 import carpet from "../assets/carpet1.png"
 import carpet2 from "../assets/carpet2.png"
-import quote from "../assets/quote.png"
-
+import logo from "../assets/logo.svg"
+import phone from "../assets/phone.svg"
 
 const Home = () => {
 const [section2Entered, setSection2Entered] = useState(false);
@@ -201,11 +201,11 @@ const [startTyping9, setStartTyping9] = useState(false);
             </div>
 
             <div className={`section9`} onMouseEnter={() => {
-            setStartTyping(true);}}
+            setStartTyping9(true);}}
             >
                 <div className="quotecont">
                     <div className="quote">
-                        {startTyping && (
+                        {startTyping9 && (
 
                    <TextType 
                                 text="المُحب لو معندوش عزة نفس ميتحبش"
@@ -227,10 +227,28 @@ const [startTyping9, setStartTyping9] = useState(false);
                 </div>
             </div>
 
+            <footer>
+                <img className='logo' src={logo} alt="" />
 
+                <ul className='list'>
+                    <li>Home</li>
+                    <li>Timeline</li>
+                    <li>Radio Era</li>
+                    <li>Music that united nations</li>
+                    <li>Her Style</li>
+                </ul>
+            </footer>
+
+        
+            
+            
 
 
         </main>
+        <div className="msg2">
+                 <img src={phone} alt="" />
+            <h5>This can't be viewed on the phone</h5>
+            </div>
         
         
         

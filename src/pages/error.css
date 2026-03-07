@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.error{
+    width: 100%;
+    height: auto;
+    background-image: url("../assets/grunge-vintage-old-paper-background.jpg");
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  height: 100vh;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error h1{
+    color: #6E503D;;
+text-align: center;
+font-family: "Special Elite", system-ui;
+font-size: 200px;
+font-style: normal;
+font-weight: 350;
+line-height: normal;
+letter-spacing: -2.905px;
+}
+
+.msg h5{
+    color: #6E503D;;
+text-align: center;
+font-family: "Special Elite", system-ui;
+font-size: 100px;
+font-style: normal;
+font-weight: 350;
+line-height: normal;
+letter-spacing: -2.905px;
+}
+
+
+.back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-decoration: none;
+  color: inherit; 
+ 
+}
+
+.back img{
+    width: 32px;
+    height: 32px;
+}
+
+.back h5{
+       color: #1E1E1E;;
+text-align: center;
+font-family: "Special Elite", system-ui;
+font-size: 25px;
+font-style: normal;
+font-weight: 350;
+line-height: normal;
+align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
