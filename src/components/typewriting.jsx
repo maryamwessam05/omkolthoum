@@ -22,6 +22,7 @@ const TextType = ({
   variableSpeed,
   onSentenceComplete,
   startOnVisible = false,
+  
   reverseMode = false,
   ...props
 }) => {

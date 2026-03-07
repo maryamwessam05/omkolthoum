@@ -24,12 +24,21 @@ import violin from "../assets/violin.png"
 import tape2 from "../assets/tape.png"
 import cape from "../assets/cape.png"
 import char from "../assets/char.png"
+import cup from "../assets/cup.png"
+import flower2 from "../assets/flower2.png"
+import radio from "../assets/radio.png"
+import newspaper from "../assets/news2.png"
+import ticket from "../assets/ticket.png"
+import omkolthoum from "../assets/omkolthom2.png"
 
 import { useState} from "react";
+import Caption from '../components/caption';
 
 const Home = () => {
 const [section2Entered, setSection2Entered] = useState(false);
 const [section3Entered, setSection3Entered] = useState(false);
+const [section4Entered, setSection4Entered] = useState(false);
+const [startTyping, setStartTyping] = useState(false);
     return (
         <>
         <main>
@@ -61,23 +70,8 @@ const [section3Entered, setSection3Entered] = useState(false);
                     <img className='house' src={house} alt="" />
                     <img className='girl' src={girl} alt="" />
 
-                    <div className="caption">
-                        <TextType 
-                            text={["Born in a small Egyptian village" , "Learned music from her father"]}
-                            typingSpeed={75}
-                            pauseDuration={1500}
-                            showCursor
-                            cursorCharacter="_"
-                            texts={["Welcome to React Bits! Good to see you!","Build some amazing experiences!"]}
-                            deletingSpeed={50}
-                            variableSpeedEnabled={false}
-                            variableSpeedMin={60}
-                            variableSpeedMax={120}
-                            cursorBlinkDuration={0.5}
-                        
-                        />
+                     <Caption text={["Born in a small Egyptian village" ,"Learned music from her father" ]} loop={true} style="caption" />
 
-                    </div>
                 </div>
 
                 <div className="linecont">
@@ -117,25 +111,41 @@ const [section3Entered, setSection3Entered] = useState(false);
                 <div className="character">
                     <img className='cape' src={cape} alt="" />
                     <img className='char' src={char} alt="" />
-                    <div className="caption2">
-                        <TextType 
-                            text={["She disguised herself as a boy early" ," in her career to perform publicly."]}
-                            typingSpeed={75}
-                            pauseDuration={1500}
-                            showCursor
-                            cursorCharacter="_"
-                            texts={["Welcome to React Bits! Good to see you!","Build some amazing experiences!"]}
-                            deletingSpeed={50}
-                            variableSpeedEnabled={false}
-                            variableSpeedMin={60}
-                            variableSpeedMax={120}
-                            cursorBlinkDuration={0.5}
-                        
-                        />
-
-                    </div>
+                    <Caption text={["She disguised herself as a boy " ,"early in her career to perform publicly." ]} loop={true} style="caption2" />
                 </div>
 
+            </div>
+
+            <div className={`section4 ${section4Entered ? "section4-active" : ""}`} onMouseEnter={() => {
+            setStartTyping(true);
+            setSection4Entered(true);}}
+            >
+
+                {startTyping && (
+                    <Caption text={["Her Radio Era" ]} loop={false} style="caption3" />
+
+                 )}
+
+                 <div className="bgs4">
+                    <img className='cup' src={cup} alt="" />
+                    <img className='flower2' src={flower2} alt="" />
+                    <img className='radio' src={radio} alt="" />
+                    <img className='news2' src={newspaper} alt="" />
+                    <img className='ticket' src={ticket} alt="" />
+                    
+
+                 </div>
+
+                 <div className="omkolthoumhero">
+                     <img className='omkolthoum' src={omkolthoum} alt="" />
+                     <Caption text={["Every first Thursday of the month," ," the Arab world would stop to listen." ]} loop={true} style="caption4" />
+                          
+                    </div>
+
+            </div>
+
+            <div className="section5">
+                
             </div>
         </main>
         
