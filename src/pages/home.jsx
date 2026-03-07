@@ -18,12 +18,18 @@ import note from "../assets/musicnote.png"
 import player from "../assets/music.png"
 import TextType from '../components/typewriting';
 import note2 from "../assets/note2.png"
+import flower from "../assets/flower.png"
+import note3 from "../assets/note3.png"
+import violin from "../assets/violin.png"
+import tape2 from "../assets/tape.png"
+import cape from "../assets/cape.png"
+import char from "../assets/char.png"
 
 import { useState} from "react";
 
 const Home = () => {
-  const [entered, setEntered] = useState(false);
-
+const [section2Entered, setSection2Entered] = useState(false);
+const [section3Entered, setSection3Entered] = useState(false);
     return (
         <>
         <main>
@@ -49,8 +55,8 @@ const Home = () => {
                 
             </div>
 
-            <div className={`section2 ${entered ? "section2-active" : ""}`}
-  onMouseEnter={() => setEntered(true)}>
+            <div className={`section2 ${section2Entered ? "section2-active" : ""}`}
+     onMouseEnter={() => setSection2Entered(true)}>
                 <div className="half1">
                     <img className='house' src={house} alt="" />
                     <img className='girl' src={girl} alt="" />
@@ -97,8 +103,38 @@ const Home = () => {
 
                 </div>
             </div>
+            <div className={`section3 ${section3Entered ? "section3-active" : ""}`}
+                onMouseEnter={() => setSection3Entered(true)}>
+                <div className="bg">
+                    <img src={note2} alt="" />
+                    <img className='flower' src={flower} alt="" />
+                    <img className='note3' src={note3} alt="" />
+                    <img className='tape2' src={tape2} alt="" />
+                    <img className='violin' src={violin} alt="" />
 
-            <div className="section3">
+                </div>
+
+                <div className="character">
+                    <img className='cape' src={cape} alt="" />
+                    <img className='char' src={char} alt="" />
+                    <div className="caption2">
+                        <TextType 
+                            text={["She disguised herself as a boy early" ," in her career to perform publicly."]}
+                            typingSpeed={75}
+                            pauseDuration={1500}
+                            showCursor
+                            cursorCharacter="_"
+                            texts={["Welcome to React Bits! Good to see you!","Build some amazing experiences!"]}
+                            deletingSpeed={50}
+                            variableSpeedEnabled={false}
+                            variableSpeedMin={60}
+                            variableSpeedMax={120}
+                            cursorBlinkDuration={0.5}
+                        
+                        />
+
+                    </div>
+                </div>
 
             </div>
         </main>

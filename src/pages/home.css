@@ -316,4 +316,118 @@ animation-delay: 0.9s;
   }
 
 
+.section3{
+    margin-top: 250px;
+    position: relative;
+}
 
+.bg{
+    position: absolute;
+    width: 100%;
+     opacity: 0;
+  transform: scale(0);
+}
+
+.flower{
+    position: absolute;
+    left: 350px;
+}
+
+.tape2{
+    position: absolute;
+    right: 0;
+}
+.note3{
+    position: absolute;
+    right: 240px;
+}
+
+.violin{
+    position: absolute;
+        right: 83px;
+    top: -94px;
+}
+
+.character{
+    position: relative;
+    z-index: 15;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cape{
+    position: absolute;
+    top: -40px;
+}
+
+.section3-active .bg{
+  animation: revealCharacter 1s ease forwards;
+
+
+}
+
+
+.char{
+    transform: translateY(-579px);
+    opacity: 0;
+    
+}
+
+.cape{
+    z-index: 9;
+    transform: translateY(-579px);
+    opacity: 0;
+
+}
+
+.section3-active .char{
+  animation: character 1s ease forwards 1s;
+
+}
+
+.section3-active .cape{
+  animation: character 1s ease forwards 2.5s;
+
+}
+@keyframes character {
+  from{
+    transform: translateY(-579px);
+
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+
+    opacity: 1;
+  }
+}
+
+.caption2{
+    background-image: url("../assets//paper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+        width: 442px;
+    height: 164px;
+    padding-top: 20px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #6E503D;
+    font-family: "Special Elite", system-ui;
+    font-size: 18.985px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    letter-spacing: -0.959px;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-7.413deg);
+    position: relative;
+    z-index: 9;
+    margin-top: -100px;
+
+}
