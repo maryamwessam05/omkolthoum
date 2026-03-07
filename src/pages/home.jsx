@@ -31,8 +31,9 @@ import newspaper from "../assets/news2.png"
 import ticket from "../assets/ticket.png"
 import omkolthoum from "../assets/omkolthom2.png"
 
-import { useState} from "react";
+import { useState , useRef} from "react";
 import Caption from '../components/caption';
+import Section5 from '../components/section5';
 
 const Home = () => {
 const [section2Entered, setSection2Entered] = useState(false);
@@ -144,9 +145,7 @@ const [startTyping, setStartTyping] = useState(false);
 
             </div>
 
-            <div className="section5">
-                
-            </div>
+            <Section5 />
         </main>
         
         

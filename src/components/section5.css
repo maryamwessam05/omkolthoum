@@ -1,0 +1,109 @@
+.section5{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    
+}
+
+.playercont{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+
+}
+
+.click{
+    color: #1E1E1E;
+text-align: center;
+    font-family: "Special Elite", system-ui;
+font-size: 32.803px;
+font-style: normal;
+font-weight: 350;
+line-height: normal;
+letter-spacing: -1.312px;
+cursor: pointer;
+}
+
+.player2{
+    position: absolute;
+    left: 50px;
+opacity: 1;}
+
+.flower3{
+    position: absolute;
+    right: 0;
+    opacity: 1;
+}
+
+.carpet2{
+    position: relative;
+    z-index: 9;
+}
+
+
+.vinyl{
+    position: absolute;
+    animation: spinCarpet 10s linear infinite;
+  transform-origin: center;
+}
+.player4{
+    position: relative;
+    z-index: 9;
+}
+
+.lyrics{
+    color: #000;
+text-align: center;
+font-family: "Aref Ruqaa";
+font-size: 59.78px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -2.391px;
+width: 500px;
+display: none;
+}
+
+@keyframes spinCarpet {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.vinyl, .player2, .player4, .carpet2, .flower3 {
+    transition: all 1s ease;
+}
+
+.lyrics-active{
+    display: block;
+    order: 2;
+    margin-left: 50px;
+}
+
+.vinyl-active {
+    top: 9px;
+    left: 10px;
+}
+
+.player4-active {
+display: block;
+transform: translateX(-239px);
+}
+
+.player2-active {
+opacity: 0;}
+
+.carpet2-active {
+    order: 3;
+}
+
+.flower3-active {
+opacity: 0;}
